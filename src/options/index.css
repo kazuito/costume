@@ -1,0 +1,46 @@
+html,
+body,
+#root {
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+:is(html, body, #root)::-webkit-scrollbar {
+  display: none;
+}
+
+.cm-scroller {
+  max-width: calc(100vw - 200px);
+  max-height: calc(100vh - 100px);
+  transition: width 0.5s;
+}
+@media (width<1000px) {
+  .cm-scroller {
+    max-width: calc(100vw - 32px);
+  }
+}
+
+.cm-scroller::-webkit-scrollbar {
+  background: #282c34;
+  width: 1rem;
+}
+.cm-scroller::-webkit-scrollbar-thumb {
+  background-color: rgb(63, 63, 66);
+  box-shadow: inset 0 0 0 4px #282c34;
+  border-radius: 20px;
+}
+.cm-scroller::-webkit-scrollbar-button {
+  display: none;
+}
+.cm-scroller::-webkit-scrollbar-corner {
+  background-color: #282c34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ͼ1.cm-editor.cm-focused {
+  outline: none !important;
+}

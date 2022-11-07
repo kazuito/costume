@@ -1,0 +1,122 @@
+/* prettier-ignore */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;list-style: none;outline:none;}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+body {
+  width: 300px;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  background: #f8f8f8;
+}
+
+/* header */
+header {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+.top-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.top-logo > img {
+  width: 100px;
+  height: auto;
+}
+.top-logo > h1 {
+  font-size: 1.3rem;
+}
+
+#option-icon {
+  font-size: 18px;
+  color: #bbbbbb;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  margin-right: -4px;
+}
+#option-icon:hover {
+  color: gray;
+  background: #0000000f;
+}
+
+/* main */
+.active-section {
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0px 2px 2px 1px #dddddd;
+  background: #fff;
+}
+.active-count {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #9df58d;
+  font-size: 10px;
+  color: #169916;
+  display: inline-block;
+  font-weight: bold;
+}
+.active-count.zero {
+  background: #dedede;
+  color: #606060;
+}
+.active-number {
+  font-size: 11px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.active-list {
+  padding: 0 6px;
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  padding: 3px 0;
+  font-size: 13px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #4c4c4c;
+  justify-content: space-between;
+  line-height: 18px;
+}
+.item-name {
+  display: flex;
+  align-items: center;
+}
+.item-name::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #4eec32;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.no-active {
+  padding-left: 4px;
+  font-size: 12px;
+  color: gray;
+}
+.item-button-box {
+  display: flex;
+  align-items: center;
+}
+.item-button-box > button {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  background: transparent;
+  color: gray;
+  display: none;
+}
+.item:hover .item-button-box > button {
+  display: block;
+}

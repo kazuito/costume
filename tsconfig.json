@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    // "noEmit": true,
+    "jsx": "preserve",
+    "types": ["chrome"]
+  },
+
+  "include": ["src"]
+}
